@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page for Shadi Dot Com Website</title>
+    <style>
+        .container{
+            border:1px solid black;
+            width:50%;
+            height:100%;
+            padding: 1px 15px;
+            margin:21px 20px 20px 20px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif
+           
+        }
+       
+        .logo{
+            border-radius: 8%;
+            align-items: center;
+            padding:0px 130px;
+        }
+        #numb1{
+        width:90%;
+        padding:10px;
+        border-radius: 6px;
+        border-style: solid;
+        border-color:rgb(240, 234, 234)
+       }
+       #numb1:hover{
+        width:80%;
+        padding:10px;
+        border-radius: 6px;
+        border-color:rgb(81, 185, 226);
+        border-width: 4px;
+       }
+       #numb2{
+        width:90%;
+        padding:10px;
+        border-radius: 6px;
+        border-style: solid;
+        border-color:rgb(240, 234, 234)
+       }
+       #numb2:hover{
+        width:80%;
+        padding:10px;
+        border-radius: 6px;
+        border-color:rgb(81, 185, 226);
+        border-width: 4px;
+       }
+       a{
+        color:rgb(81, 185, 226);
+       }
+
+      
+       .btn1,.btn2{
+        width:90%;
+        padding:10px;
+        border-radius: 6px;
+        border-color:rgb(240, 234, 234);
+        background-color: rgb(81, 185, 226);
+        color:white;
+        cursor:pointer;
+        font-weight: 500;
+       }
+       
+      button:hover{
+        background-color: rgb(59, 177, 224);
+      }
+       p{
+        text-align: center;
+       }
+       h2{
+        text-align: center;
+       }
+      
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div><img class="logo" src="./icons8-s-48.png"></div>
+        <h2>Welcome back! Please Login</h2>
+        <br>
+        <br>
+        <form>
+            <label>Mobile No. / Email ID</label><br><br>
+            <input type="text" id="numb1" name="mNumb" placeholder="Enter Mobile No./ EmailID"><br><br>
+            <label>Password</label><br><br>
+            <input type="text" id="numb2" name="mNumb" placeholder="Enter password"><br><br>
+        </form>
+
+        <form action="/action_page.php">
+            <input type="checkbox" id="check" name="check1" value="cbox">
+            <label for="checkbox">Stay Logged In</label> <img src="./Images/question-mark-button.svg" height="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="forgot" href="#">Forgot Password?</a><br>
+            <br><br>
+            <button class="btn1">Login</button><br>
+            <p class="firstp">OR</p> 
+            <button class="btn2">Login With OTP</button>
+            <br>
+            <p class="lastitem">New to Shaadi? <span><strong>Sign Up Free</strong></span></p>
+          </form>
+    </div>
+</body>
+</html>
